@@ -100,7 +100,7 @@ h2, h1, h3 {
   background: transparent;
   cursor: pointer;
   transition: ease-out 0.5s;
-  border: 4px solid white;
+  border: 1px solid gold;
   box-shadow: inset 0 0 0 0 black;
 }
 
