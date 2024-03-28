@@ -66,6 +66,7 @@ h2, h1, h3 {
   position: fixed;
   width: 100%;
   z-index: 2;
+  display: block;
 } 
 
 .menu-horizontal {
@@ -124,7 +125,28 @@ h2, h1, h3 {
   }
 }
 
-@media screen and (max-width: 615px) {
+@media screen and (max-width: 800px) {
+  main .texto{
+    padding: 0px;
+    display: block;
+    width: 260px;
+    display: flex; 
+    flex-direction: column;
+  }
+}
+@media screen and ( max-width: 800px) {
+  .menu-horizontal {
+    display: none;
+  }
+}
+@media  screen and (max-width:703px) {
+  .mr-20 {
+    margin: 0px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 757px) {
   .luan {
   display: none;
   }
@@ -312,7 +334,6 @@ img {
   border-radius:100%;
   height: 50px;
 }
-
 
 .azul {
   color: #538df0;
