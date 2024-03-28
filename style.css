@@ -25,6 +25,24 @@ h2, h1, h3 {
   color: rgb(204, 203, 203);
 }
 
+img {
+  border: 1px solid #000000;
+  border-radius: 20px;
+  user-select: none;
+}
+
+img:hover {
+  opacity: 0.5; 
+  animation: border-color 2s reverse infinite;
+  cursor: pointer; 
+}
+ 
+summary {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
 .luan {
   width: 290px;
   margin: 0;
@@ -37,22 +55,7 @@ h2, h1, h3 {
   right: -40px;
   top: 10px;
   z-index: 2;
-}
-
-.luan{
   animation: luan-in-right 2s ease ;
-}
-@keyframes luan-in-right {
-  0% {
-    opacity: 0;
-    transform: translateX(2000px);
-  }
-  60% {
-    opacity: 1;
-    transform: translateX(-30px);
-  }
-  80% { transform: translateX(10px); }
-  100% { transform: translateX(0); }
 }
 
 #cabecalho {
@@ -108,24 +111,82 @@ h2, h1, h3 {
 #itens-menu:hover {
   color: black;
   box-shadow: inset 0 -100px 0 0 black;
-  }
+}
 
 #itens-menu:active {
   transform: scale(0.9);
-  }
+}
 
 @keyframes animation-menu {
-    0% {
-    opacity: 1;
-    transform: translateX(0px) rotate(0deg);
+0% {
+  opacity: 1;
+  transform: translateX(0px) rotate(0deg);
   }
-  100% {
-    opacity: 0;
-    transform: translateX(100%) rotate(120deg);
+100% {
+  opacity: 0;
+  transform: translateX(100%) rotate(120deg);
   }
 }
 
-@media screen and (max-width: 800px) {
+@keyframes colors {
+0% {
+  background-position: 0% 50%;
+  }
+25% {
+  background-position: 100% 50%;
+  }
+100% {
+  background-position: 0% 50% 
+  }
+}
+
+@keyframes luan-in-right {
+0% {
+  opacity: 0;
+  transform: translateX(2000px);
+  }
+60% {
+  opacity: 1;
+  transform: translateX(-30px);
+  }
+80% { 
+  transform: translateX(10px);
+ }
+100% { 
+  transform: translateX(0);
+ }
+}
+
+@keyframes border-color {
+  0% {
+    border-color: #d1178d;
+  }
+  50% {
+    border-color: #00ff00;
+  }
+  100% {
+    border-color: blue;
+  }
+}
+@keyframes muda-cor {
+  0% {
+  border-color: #164184;
+  }
+  25%{
+  border-color: black;
+  }
+  50% {
+  border-color: #fff;
+  }
+  75% {
+  border-color: blue;
+  }
+  100% {
+  border-color: #041538;
+  }
+}
+
+@media screen and (max-width: 800px)  {
   main .texto{
     padding: 0px;
     display: block;
@@ -134,33 +195,27 @@ h2, h1, h3 {
     flex-direction: column;
   }
 }
-@media screen and ( max-width: 800px) {
-  .menu-horizontal {
+@media screen and (max-width: 525px)  {
+  .menu-horizontal  {
     display: none;
   }
 }
-@media  screen and (max-width: 700px) {
-  .mr-20 {
-    margin: 0px;
-    text-align: center;
-  }
-}
 
-@media screen and (max-width: 755px) {
+@media screen and (max-width: 800px)  {
   .luan {
   display: none;
   }
 }
 
-@keyframes colors {
-  0% {
-background-position: 0% 50%;
+@media (max-width: 1025px) {
+  img {
+  display: none;
   }
-  25% {
-background-position: 100% 50%;
-  }
-  100% {
-background-position: 0% 50% 
+}
+
+@media (max-width: 1025px) {
+  .t1, .t2 {
+    width: 100%;
   }
 }
 
@@ -245,30 +300,6 @@ background-position: 0% 50%
   list-style: none;
 }
 
-img:hover {
-  opacity: 0.5; 
-  animation: border-color 2s reverse infinite;
-  cursor: pointer; 
-}
- 
-img {
-  border: 1px solid #000000;
-  border-radius: 20px;
-  user-select: none;
-}
-
-@keyframes border-color {
-0% {
-  border-color: #d1178d;
-}
-50% {
-  border-color: #00ff00;
-}
-100% {
-  border-color: blue;
-}
-}
-
 .t1 {
   width: 560px;
   padding:0px 100px 10px 10px;
@@ -278,25 +309,13 @@ img {
   width: 800px;
 }
 
-.t1, .t2{
+.t1, .t2 { 
   display: inline-block;
-}
-
-@media (max-width: 1025px) {
-.t1, .t2 {
-  width: 100%;
-}
 }
 
 .texto {
   padding-right: 170px;
   padding-left: 170px;
-}
-
-@media (max-width:1051px) {
-  img {
-  display: none;
-  }
 }
 
 #imagem-hat {
@@ -312,30 +331,12 @@ img {
   color: #fff;
 }
 
-@keyframes muda-cor {
-  0% {
-  border-color: #164184;
-  }
-  25%{
-  border-color: black;
-  }
-  50% {
-  border-color: #fff;
-  }
-  75% {
-  border-color: blue;
-  }
-  100% {
-  border-color: #041538;
-  }
-}
-
 .favicon {
   border-radius:100%;
   height: 50px;
 }
 
-.azul {
+.azul     {
   color: #538df0;
 }
 
@@ -343,20 +344,24 @@ img {
   color: #d43c29;
 }
 
-.amarelo {
+.amarelo  {
   color: #fbc017;
 }
 
-.verde {
+.verde    {
   color: #3aab54;
 }
 
-.laranja {
+.laranja  {
   color: orangered;
 }
 
-.white {
+.white    {
   color: white;
+}
+
+.cinza    {
+  color: #3a3a3a;
 }
 
 .mini-hat {
@@ -364,10 +369,15 @@ img {
   cursor: default;
 }
 
-summary {
-  font-size: 20px;
-  color: white;
-  cursor: pointer;
+#texts {
+  padding: 0px 30px 0px 0px;
 }
 
-
+/* config do mouse */
+::-webkit-scrollbar { 
+  width: 15px; 
+  background: -webkit-linear-gradient(45deg, #070711, #510d2d, blue, #000000);
+}
+::-webkit-scrollbar-thumb {
+   background: -webkit-linear-gradient(45deg, #000000, #fff, #fff, #000000); 
+}
