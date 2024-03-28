@@ -139,14 +139,14 @@ h2, h1, h3 {
     display: none;
   }
 }
-@media  screen and (max-width:703px) {
+@media  screen and (max-width: 700px) {
   .mr-20 {
     margin: 0px;
     text-align: center;
   }
 }
 
-@media screen and (max-width: 757px) {
+@media screen and (max-width: 755px) {
   .luan {
   display: none;
   }
