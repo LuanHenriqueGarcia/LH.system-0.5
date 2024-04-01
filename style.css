@@ -29,6 +29,7 @@ img {
   border: 1px solid #000000;
   border-radius: 20px;
   user-select: none;
+ 
 }
 
 img:hover {
@@ -44,6 +45,7 @@ summary {
 }
 
 .luan {
+  cursor: not-allowed;
   width: 290px;
   margin: 0;
   height: 50px;
@@ -168,6 +170,7 @@ summary {
     border-color: blue;
   }
 }
+
 @keyframes muda-cor {
   0% {
   border-color: #164184;
@@ -195,6 +198,7 @@ summary {
     flex-direction: column;
   }
 }
+
 @media screen and (max-width: 525px)  {
   .menu-horizontal  {
     display: none;
@@ -207,7 +211,7 @@ summary {
   }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1450px) {
   img {
   display: none;
   }
@@ -319,8 +323,9 @@ summary {
 }
 
 #imagem-hat {
-  display:flex;
+  display: flex;
   user-select: none;
+  pointer-events: none;
 }
 
 #text-img {
@@ -364,9 +369,12 @@ summary {
   color: #3a3a3a;
 }
 
-.mini-hat {
+#mini-hat {
   background: white;
   cursor: default;
+  pointer-events: none;
+  background: none;
+  border: none;
 }
 
 #texts {
