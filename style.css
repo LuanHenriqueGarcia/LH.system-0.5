@@ -29,7 +29,7 @@ img {
   border: 1px solid #000000;
   border-radius: 20px;
   user-select: none;
- 
+  animation: pular 6s ease-in-out infinite;
 }
 
 img:hover {
