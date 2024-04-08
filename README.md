@@ -39,4 +39,4 @@ Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir uma issue
  
 Se precisar de ajuda ou tiver alguma dúvida, entre em contato pelo email: [luangarciatodero2007@gmail.com](mailto:seuemail@gmail.com).
  
-Obrigado por visitar o meu projeto!
+Obrigado por visitar o meu projeto!🎩

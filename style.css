@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  text-align: justify;
   font-family: Nunito Sans;
 }
 
@@ -17,7 +16,7 @@ body {
 }
 
 p {
-  padding: 5px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
 }
 
 h2, h1, h3 {
@@ -57,7 +56,7 @@ summary {
   right: -40px;
   top: 10px;
   z-index: 2;
-  animation: luan-in-right 2s ease ;
+  animation: luan-in-right 2s ease;
 }
 
 #cabecalho {
@@ -202,11 +201,11 @@ summary {
   }
 }
 
-@media screen and (max-width: 800px)  {
+@media screen and (max-width: 599px)  {
   main .texto{
     padding: 0px;
     display: block;
-    width: 260px;
+    width: 100vw;
     display: flex; 
     flex-direction: column;
   }
@@ -227,6 +226,14 @@ summary {
 @media (max-width: 1450px) {
   img {
   display: none;
+  }
+
+  .favicon-git{
+    display: block;
+  }
+
+  #imagem-hat #texts {
+    padding: 0;
   }
 }
 
@@ -256,8 +263,7 @@ summary {
 .mr-20 {
   margin-right: 20px;
   color: #9c9c9c;
-  border-radius: 10px;
-  padding: 30px;
+  border-radius: 20px;
 }
 
 .hb1 {
@@ -267,7 +273,7 @@ summary {
   margin-right: 20px;
   color: white;
   text-align: center;
-  font-size: 30px ; 
+  font-size: 30px; 
 }
 
 #item {
@@ -303,9 +309,8 @@ summary {
   justify-content: center;
   align-items: center;
   background-color: #232323;
-  padding: 20px ;
+  padding: 20px;
   position: relative;
-  bottom: 0;
 }
 
 #rodape a {
@@ -319,7 +324,7 @@ summary {
 
 #t1 {
   width: 560px;
-  padding:30px 100px 10px 10px;
+  padding-right: 20px;
 }
 
 #t2 {
@@ -349,7 +354,7 @@ summary {
   color: #fff;
 }
 
-.favicon {
+.favicon-git {
   border-radius:100%;
   height: 50px;
   animation: pular 6s ease-in-out infinite;
@@ -360,7 +365,7 @@ summary {
 }
 
 .vermelho {
-  color: #d43c29;
+  color: red;
 }
 
 .amarelo  {
@@ -383,13 +388,13 @@ summary {
   color: #3a3a3a;
 }
 
-#mini-hat {
+.mini-hat {
   background: white;
   cursor: default;
   pointer-events: none;
   background: none;
   border: none;
-  animation: pular 6s ease-in-out infinite;
+  animation: pular 4s ease-in-out infinite;
 }
 
 #texts {
@@ -407,4 +412,5 @@ summary {
 
 #dados {
   display: flex;
+  margin: 10px;
 }
