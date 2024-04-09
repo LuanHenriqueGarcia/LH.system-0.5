@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: Nunito Sans;
+  animation: sombra 1s ease-in-out ;
 }
 
 html {
@@ -19,7 +20,7 @@ p {
   padding: 10px 0px 10px 0px;
 }
 
-h2, h1, h3 {
+h1, h2, h3 {
   padding: 10px 0px 15px 0px;
   color: rgb(204, 203, 203);
 }
@@ -77,8 +78,6 @@ summary {
   display: flex;
   padding: 20px;
   list-style: none;
-  box-shadow: #000 10px 0px;
-  animation: animation-menu 2.5s ease reverse;
   display: flex;
   align-items: center;
 }
@@ -92,8 +91,15 @@ summary {
   color: white;
   font-size: 16px;
   font-weight: 500;
-  scroll-margin-top: 50px;
-  padding: 25px;
+  padding: 0px 25px;
+}
+
+#mobile-img img{
+  display: none;
+  margin: auto;
+  width: 100%;
+  max-width: 500px;
+  pointer-events: none;
 }
 
 #itens-menu {
@@ -108,23 +114,8 @@ summary {
   border: 1px solid gold;
 }
 
-#itens-menu:hover {
-  color: black;
-}
-
 #itens-menu:active {
   transform: scale(0.9);
-}
-
-@keyframes animation-menu {
-0% {
-  opacity: 1;
-  transform: translateX(0px) rotate(0deg);
-  }
-100% {
-  opacity: 0;
-  transform: translateX(100%) rotate(120deg);
-  }
 }
 
 @keyframes colors {
@@ -201,7 +192,12 @@ summary {
   }
 }
 
-@media screen and (max-width: 599px)  {
+@keyframes sombra {
+  from { opacity: 0; }
+  to { opacity: 2; }
+}
+
+@media screen and (max-width: 740px)  {
   main .texto{
     padding: 0px;
     display: block;
@@ -211,10 +207,23 @@ summary {
   }
 }
 
-@media screen and (max-width: 525px)  {
-  .menu-horizontal  {
-    display: none;
+@media screen and (max-width: 550px)  {
+    .menu-horizontal {
+      display: block;
   }
+  .menu-horizontal a {
+    display: flex;
+    width: 100%;
+    padding: 0px;
+  }
+  #cabecalho    {
+    height: 7em;
+  }
+
+  div #start{
+    padding-top: 150px;
+  }
+
 }
 
 @media screen and (max-width: 800px)  {
@@ -226,6 +235,11 @@ summary {
 @media (max-width: 1450px) {
   img {
   display: none;
+  }
+
+  
+  #mobile-img img{
+    display: block;
   }
 
   .favicon-git{
