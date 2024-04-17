@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background-color: #fff url(img/backgroud.png);  ;
+  background-color: #fff;
   color: #050505 ;
   transition: background-color 0.5s ease;
   align-items: center;
