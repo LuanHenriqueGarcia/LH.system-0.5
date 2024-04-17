@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 * {
   margin: 0;
   padding: 0;
   font-family: Nunito Sans;
-  animation: sombra 1s ease-in-out ;
+  border: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -11,9 +13,11 @@ html {
 }
 
 body {
-  background: #232323;
-  background: url(img/backgroud.png);
-  color: gold;
+  background-color: #fff url(img/backgroud.png);  ;
+  color: #050505 ;
+  transition: background-color 0.5s ease;
+  align-items: center;
+  justify-content: center;
 }
 
 p {
@@ -22,7 +26,7 @@ p {
 
 h1, h2, h3 {
   padding: 10px 0px 15px 0px;
-  color: rgb(204, 203, 203);
+  color: rgb(0, 0, 0);
 }
 
 img {
@@ -40,10 +44,13 @@ img:hover {
  
 summary {
   font-size: 20px;
-  color: white;
+  color: rgb(0, 0, 0);
   cursor: pointer;
+  color: red;
 }
-
+details {
+  animation: sombra 2s ease-in-out ;
+}
 .luan {
   cursor: not-allowed;
   width: 290px;
@@ -112,6 +119,7 @@ summary {
   cursor: pointer;
   transition: ease-out 0.5s;
   border: 1px solid gold;
+  margin-right: 20px;
 }
 
 #itens-menu:active {
@@ -207,17 +215,21 @@ summary {
   }
 }
 
-@media screen and (max-width: 550px)  {
+@media screen and (max-width: 645px)  {
     .menu-horizontal {
       display: block;
   }
+    #testes {
+      display: none;
+
+    }
   .menu-horizontal a {
     display: flex;
     width: 100%;
     padding: 0px;
   }
   #cabecalho    {
-    height: 7em;
+    height: 8em;
   }
 
   div #start{
@@ -226,10 +238,11 @@ summary {
 
 }
 
-@media screen and (max-width: 800px)  {
+@media screen and (max-width: 865px)  {
   .luan {
   display: none;
   }
+
 }
 
 @media (max-width: 1450px) {
@@ -270,13 +283,12 @@ summary {
   padding: 80px 10px 10px 10px;
   border: 1px solid #ffffff;
   border-radius: 20px;
-  background: #070711;
+  background: #ccc;
   animation: muda-cor 9s linear infinite;
 }
 
 .mr-20 {
   margin-right: 20px;
-  color: #9c9c9c;
   border-radius: 20px;
 }
 
@@ -322,9 +334,10 @@ summary {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #232323;
+  background: rgb(66, 66, 66);
   padding: 20px;
   position: relative;
+  color: white;
 }
 
 #rodape a {
@@ -401,9 +414,11 @@ summary {
 .cinza    {
   color: #3a3a3a;
 }
-
+.gold {
+  color: gold;
+}
 .mini-hat {
-  background: white;
+  background: transparent;
   cursor: default;
   pointer-events: none;
   background: none;
@@ -427,4 +442,52 @@ summary {
 #dados {
   display: flex;
   margin: 10px;
+}
+
+body.dark {
+  background: #000;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+  transform: scale(1.5);
+}
+
+
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
 }
