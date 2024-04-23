@@ -215,13 +215,14 @@ details {
   }
 }
 
-@media screen and (max-width: 645px)  {
+@media screen and (max-width: 800px)  {
     .menu-horizontal {
       display: block;
+      
   }
-    #testes {
-      display: none;
-
+    .label {
+      left: 42%;
+      top: -10px;
     }
   .menu-horizontal a {
     display: flex;
@@ -238,7 +239,7 @@ details {
 
 }
 
-@media screen and (max-width: 865px)  {
+@media screen and (max-width: 1020px)  {
   .luan {
   display: none;
   }
