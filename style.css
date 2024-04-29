@@ -57,7 +57,7 @@ summary {
 }
 
 details {
-  background: gainsboro;
+  background: rgb(150, 150, 150);
   padding: 10px;
   border-radius: 15px;
 }
@@ -411,6 +411,7 @@ details[open] summary {
   text-align: center;
   padding: 10px;
   text-decoration: dashed;
+
 }
 
 #t1 {
