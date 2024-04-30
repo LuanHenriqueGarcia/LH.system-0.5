@@ -569,7 +569,7 @@ h4 strong {
   border-radius: 0;
   animation-fill-mode: backwards;
   animation: descer 5s linear forwards;
-  animation-delay: 15s;
+  animation-delay: 10s;
 }
 
 #mario-corredor {
@@ -578,7 +578,7 @@ h4 strong {
   border: none;
   animation: none;
   right: 101vw;
-  animation: mover 15s linear forwards;
+  animation: mover 10s linear forwards;
 }
 
 .rodape {
@@ -594,8 +594,8 @@ h4 strong {
     top: -48px;
   }
 
-  90% {
-    right: 25px;
+  85% {
+    right: 100px;
     top: -48px;
   }
 
@@ -639,6 +639,8 @@ h4 strong {
 #ver-mais {
   right: 0;
 }
+
+
 
 
 summary::-webkit-details-marker {
