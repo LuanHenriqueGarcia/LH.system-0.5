@@ -64,15 +64,12 @@ details {
 
 details summary {
   cursor: pointer;
-  transition: margin .3s ease-out;
-  
+  transition: margin 0.3s ease-out;
 }
 
 details[open] summary {
   margin-bottom: 10px;
 }
-
-
 
 .luan {
   cursor: not-allowed;
@@ -411,7 +408,6 @@ details[open] summary {
   text-align: center;
   padding: 10px;
   text-decoration: dashed;
-
 }
 
 #t1 {
@@ -642,4 +638,9 @@ h4 strong {
 
 #ver-mais {
   right: 0;
+}
+
+
+summary::-webkit-details-marker {
+  display: none
 }
