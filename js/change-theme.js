@@ -19,7 +19,7 @@ function trocaModoCor() {
   const texto = [...textoP, ...textoH1, ...textoLI, ...textoH2];
 
   for (let i = 0; i < texto.length; i++) {
-    // console.log(texto[i].tagName);
+
 
     if (texto[i].tagName == "H2") {
       texto[i].style.color = coresTextoH1[textCor];
