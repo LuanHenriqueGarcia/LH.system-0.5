@@ -24,8 +24,8 @@ Para acessar o projeto, você pode seguir dois métodos:
     https://luanhenriquegarcia.github.io/LH.system-0.5/
     ```
 ### Use este Login:
-   Email:admin@gmail.com
-   Senha: LH123
+   Email:admin@gmail.com /  Senha: LH123
+  
 ## Funcionalidades
  
 - [x] Página inicial com informações sobre CyberSecurity.
