@@ -1,6 +1,6 @@
 # Bem-vindo ao meu primeiro projeto!
  
-Olá, eu sou **Luan Henrique Garcia Tódero**, e este é o meu primeiro projeto do ano. Desenvolvi este projeto utilizando apenas **HTML5 e CSS3**, com o tema de **CyberSecurity**.
+Olá, meu nome é **Luan Henrique Garcia Tódero**, e este é o meu primeiro projeto do ano. Desenvolvi este projeto utilizando apenas **HTML5 e CSS3**, com o tema de **CyberSecurity**.
  
 ## Instalação
  
