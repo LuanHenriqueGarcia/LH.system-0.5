@@ -1,7 +1,12 @@
 # Bem-vindo ao meu primeiro projeto!
  
 Olá, meu nome é **Luan Henrique Garcia Tódero**, e este é o meu primeiro projeto do ano. Desenvolvi este projeto utilizando apenas **HTML5, CSS3 e JavaScript**, com o tema de **CyberSecurity**.
- 
+
+<div display="inline">
+      <img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
+      <img height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
+      <img height="30px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+ </div>
 ## Instalação
  
 Para acessar o projeto, você pode seguir dois métodos:
