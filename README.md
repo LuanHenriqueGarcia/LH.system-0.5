@@ -41,8 +41,6 @@ Para acessar o projeto, você pode seguir dois métodos:
  
 Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request com melhorias para o projeto.
  
-## Contato
- 
-Se precisar de ajuda ou tiver alguma dúvida, entre em contato pelo email: [luangarciatodero2007@gmail.com](mailto:seuemail@gmail.com).
+
  
 Obrigado por visitar o meu projeto!🎩
